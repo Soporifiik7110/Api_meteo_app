@@ -28,8 +28,10 @@ humidity = response['main']['humidity']
 description = response['weather'][0]['description']
 weather1 = response['weather'][0]['main']
 vue_distance = response['visibility']
+nuage_pourcent = response['clouds']['all']
 
 sunrise_time = dt.datetime.utcfromtimestamp(response['sys']['sunrise'] + response['timezone'])
 sunset_time = dt.datetime.utcfromtimestamp(response['sys']['sunset'] + response['timezone'])
+
 
 
